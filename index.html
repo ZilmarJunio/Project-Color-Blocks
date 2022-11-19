@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0. Test</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        .container:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .container:hover .test2{
+            margin-left: 100px;
+        }
+        .container:hover .test3{
+            margin-left: 200px;
+        }
+        .block_1, .block_2, .block_3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .block_1{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            z-index: 3;
+        }
+        .block_2{
+            background-color: rgba(47, 79, 79, 1);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 2;
+            transition: margin-left 0.2s;
+        }
+        .block_3{
+            background-color: rgba(128, 128, 128, 1);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 1;
+            transition: margin-left 0.2s;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="block_1">
+                <img src="" alt="touch-icon">
+            </div>
+            <div class="block_2"></div>
+            <div class="block_3"></div>
+        </div>
+    </header>
+    
+
+</body>
+</html>
