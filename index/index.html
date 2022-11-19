@@ -4,68 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0. Test</title>
-    <style>
-        *{
-            margin: 0px;
-        }
-        .container{
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            color: white;
-        }
-        .container:hover{
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-        .container:hover .test2{
-            margin-left: 100px;
-        }
-        .container:hover .test3{
-            margin-left: 200px;
-        }
-        .block_1, .block_2, .block_3{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .block_1{
-            background-color: black;
-            width: 100px;
-            height: 100px;
-            z-index: 3;
-        }
-        .block_2{
-            background-color: rgba(47, 79, 79, 1);
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            z-index: 2;
-            transition: margin-left 0.2s;
-        }
-        .block_3{
-            background-color: rgba(128, 128, 128, 1);
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            z-index: 1;
-            transition: margin-left 0.2s;
-        }
-    </style>
+    <title>Project Color Blocks</title>
+
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/blocks.css">
+
+    <script src="/scripts/script.js"></script>
 </head>
-<body>
+<body class="body">
     
     <header>
         <div class="container">
-            <div class="block_1">
-                <img src="" alt="touch-icon">
+            
+            <div class="block_1" onclick="Color1()">
+                <img class="block_1-touch-icon" src="/Assets/Hand-Touch-icon-White.png" alt="touch-icon" width="50px">
             </div>
-            <div class="block_2"></div>
-            <div class="block_3"></div>
-        </div>
-    </header>
+            <div class="block_2" onclick="Color2()"></div>
+            <div class="block_3" onclick="Color3()"></div>
+            <div class="block_4" onclick="Color4()"></div>
+            <div class="block_5" onclick="Color5()"></div>
+            <div class="block_6" onclick="Color6()"></div>
     
+        </div>
+        <div class="resetColor" onclick="ColorReset()"></div>
+    </header>
 
+    <main>
+        <h1>Color Blocks</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt
+            consequuntur perferendis eaque fuga aspernatur totamdolorem earum
+            voluptas laborum. Obcaecati error ea porro velit earum ipsam sit.
+            Dolor, asperiores? Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Sed quo labore fugit ab, obcaecati odit, eligendi repellendus
+            esse doloremque, facere voluptatibus eius qui. Obcaecati,
+            ad quasi a magnam accusamus ducimus!
+                </p>
+    </main>
 </body>
 </html>

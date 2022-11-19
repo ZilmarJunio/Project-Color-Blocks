@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+}
+.container:hover .block_2{
+    margin-left: 100px;
+}
+.container:hover .block_3{
+    margin-left: 200px;
+}
+.container:hover .block_4{
+    margin-left: 300px;
+}
+.container:hover .block_5{
+    margin-left: 400px;
+}
+.container:hover .block_6{
+    margin-left: 500px;
+}
+.block_1, .block_2, .block_3,.block_4, .block_5, .block_6, .resetColor{
+    
+    box-shadow: inset 0 0 1px 0.1px #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: margin-left 0.5s;
+    width: 100px;
+    height: 100px;
+}
+.block_1{
+    background-color: black;
+    z-index: 6;
+}
+.container:hover .block_1-touch-icon{
+    opacity: 0;
+}   
+.block_2{
+    background-color: rgb(139, 0, 0);
+    z-index: 5;
+}
+.block_3{
+    background-color: rgba(47, 79, 79, 1);
+    z-index: 4;
+}
+.block_4{
+    background-color: rgb(105, 105, 105);
+    z-index: 3;
+}
+.block_5{
+    background-color: rgb(128, 128, 128);
+    z-index: 2;
+}
+.block_6{
+    background-color: rgb(168, 168, 168);
+    z-index: 1;
+}
+.resetColor{
+    background-color: rgba(32, 33, 36, 0.9);
+    right: 0;
+}

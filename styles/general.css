@@ -1,0 +1,32 @@
+*{
+    color: white;
+    transition: opacity 0.2s;
+    margin: 0;
+    font-family: Arial;
+}
+body{
+    background-color: rgba(32, 33, 36, 0.9);
+    padding-top: 150px;
+}
+header{
+    position: absolute;
+    height: 100px;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(32, 33, 36, 0.7);
+}
+header:hover {
+    background-color: rgba(32, 33, 36, 0.4);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+p{
+    width: 600px;
+    text-align: center;
+}
