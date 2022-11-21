@@ -11,22 +11,24 @@
 
     <script src="/scripts/script.js"></script>
 </head>
-<body class="body">
+<body>
     
     <header>
-        <div class="container">
+        <div id="container">
             
-            <div class="block_1" onclick="Color1()">
-                <img class="block_1-touch-icon" src="/Assets/Hand-Touch-icon-White.png" alt="touch-icon" width="50px">
+            <div class="blocks" id="block_1" onclick="Color1()">
+                <img id="block_1-touch-icon" src="/Assets/Hand-Touch-icon-White.png" alt="touch-icon" width="50px">
             </div>
-            <div class="block_2" onclick="Color2()"></div>
-            <div class="block_3" onclick="Color3()"></div>
-            <div class="block_4" onclick="Color4()"></div>
-            <div class="block_5" onclick="Color5()"></div>
-            <div class="block_6" onclick="Color6()"></div>
+            <div class="blocks" id="block_2" onclick="Color2()"></div>
+            <div class="blocks" id="block_3" onclick="Color3()"></div>
+            <div class="blocks" id="block_4" onclick="Color4()"></div>
+            <div class="blocks" id="block_5" onclick="Color5()"></div>
+            <div class="blocks" id="block_6" onclick="Color6()"></div>
     
         </div>
-        <div class="resetColor" onclick="ColorReset()"></div>
+        <div class="blocks" id="resetColor" onclick="ColorReset()">
+            <img id="block_1-touch-icon" src="/Assets/Reset-icon-white.png" alt="touch-icon" width="40px">
+        </div>
     </header>
 
     <main>
@@ -38,7 +40,7 @@
             elit. Sed quo labore fugit ab, obcaecati odit, eligendi repellendus
             esse doloremque, facere voluptatibus eius qui. Obcaecati,
             ad quasi a magnam accusamus ducimus!
-                </p>
+        </p>
     </main>
 </body>
 </html>
